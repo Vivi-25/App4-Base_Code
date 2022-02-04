@@ -31,6 +31,29 @@ blah, blah, blah, blah
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
+<script>
+        var pregnant_count = 0;
+        var notpregnant_count = 0;
+
+        function pregnantAdd(){ //function to count pregnant//
+            pregnant_count = pregnant_count + 1;
+
+        }
+
+        function notpregnantAdd(){ //function to count not pregnant//
+            notpregnant_count = notpregnant_count + 1;
+	
+        }
+	
+	function calculateresults(){ //function for the results page//
+		var pregnantPercent = 100 * pregnant_count / 6; //equation for pregnant probability//
+		var notpregnantPercent = 100 * notpregnant_count / 6; //equation for not pregnant probability//
+		var resultText = document.getElementById("results"); //variable for the results//
+	resultText.innerHTML = "Probability you are pregnant =" + pregnantPercent + "<br> Probability you are not pregnant =" + notpregnantPercent; //results output as percentages//
+	}
+
+  </script>
+	
 <style>	
 .body {
      margin: 0em;
