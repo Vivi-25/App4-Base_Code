@@ -68,4 +68,17 @@ blah, blah, blah, blah
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!--extra information on first page-->
 	</div>
 
+<div class="page" id="one"> <!--begin division of page one-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--begin division of header-->
+		<h1>Question 1</h1> <!--displays "Question 1" in header-->
+	</div> <!--end division for header-->
+	
+    	<div id="content" class="w3-container"> <!--main content here will appear between the header and footer-->
+        	<p>Have you missed any periods recently?</p> <!--added first question on page one-->
+		<a href="#two" onclick="pregnantAdd();" class="w3-btn w3-black"> Yes</a> <!--added yes button. if clicked, the count for pregnant increases by one and leads to page two-->
+		<a href="#two" onclick="notpregnantAdd();" class="w3-btn w3-black"> No</a> <!--added no button. if clicked, the count for not pregnant increases by one and leads to page two-->
+	
+    	</div> <!--end division of main content -->
+</div> <!--end division of page one-->
+
 </html>
